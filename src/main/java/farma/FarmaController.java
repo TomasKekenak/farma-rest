@@ -58,7 +58,7 @@ public class FarmaController {
     @CrossOrigin
     @ResponseStatus(HttpStatus.CREATED)
     @RequestMapping(value = "/zvierata", method = RequestMethod.POST)
-    public void ulozPrezencka(@RequestBody Zviera zviera) {
+    public void ulozZviera(@RequestBody Zviera zviera) {
         zvieraDao.add(zviera);
     }
 }
